@@ -23,6 +23,14 @@ public abstract class Player {
     }
 
     public abstract void playAs();
+    
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 
     private double calculateNewSalary(double monthlySalary, int numberOfMonths) {
         return monthlySalary * numberOfMonths;
